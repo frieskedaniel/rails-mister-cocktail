@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :cocktails, only: [:index, :show, :new, :create] do
-    resources :doses, only: [:create, :destroy]
+    resources :doses, only: [:new, :create, ]
   end
-
+  resources :doses, only: :destroy
   # get 'cocktails', to: 'cocktails#index'
   # get '/cocktails/:id', to: 'cocktails#show', as: :cocktail
   # get '/cocktails/new', to: 'cocktails#new'
