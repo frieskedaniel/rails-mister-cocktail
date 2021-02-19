@@ -2,6 +2,7 @@
 
 <div class="container">
 <h2>Ding-Dong ; It's Cocktails Time!</h2>
+<p>Choose your weapon!</p>
 
 <ul><% @cocktails.each do |cocktail| %>
     <li><%= link_to cocktail.name, cocktail_path(cocktail) %> </li>
